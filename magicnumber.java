@@ -64,3 +64,6 @@ new MagicSignature(new byte[]{0x30, 0x26, (byte)0xB2, 0x75, 0x8E, 0x66, (byte)0x
 
 // Plain text, XML, CSV: NO magic number.  
 // Heuristic: Check if file starts with "<?xml" (XML), ASCII/UTF8 chars and commas (CSV), or is generally printable (plain text).
+
+new MagicSignature(new byte[]{0x45, 0x50, 0x00, 0x00, 0x00, 0x00, 0x4D, 0x44, 0x49, 0x20}, 0, "image/vnd.ms-modi"),
+
